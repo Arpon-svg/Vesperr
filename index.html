@@ -219,7 +219,8 @@
                 <a href="#" class="twitter d-none"><i class="bi bi-twitter"></i></a>
                 <a href="https://facebook.com/thevesperr" class="facebook"><i class="bi bi-facebook"></i></a></li>
                 <a href="#" class="instagram d-none"><i class="bi bi-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/shahin-islam-226939234/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/shahin-islam-226939234/" class="linkedin"><i
+                    class="bi bi-linkedin"></i></a>
               </div>
             </div>
           </div>
@@ -243,7 +244,38 @@
 
             </div>
           </div>
+          <!--  -->
+          <!-- Messenger Chat Plugin Code -->
+          <div id="fb-root"></div>
 
+          <!-- Your Chat Plugin code -->
+          <div id="fb-customer-chat" class="fb-customerchat">
+          </div>
+
+          <script>
+            var chatbox = document.getElementById('fb-customer-chat');
+            chatbox.setAttribute("page_id", "104251735713736");
+            chatbox.setAttribute("attribution", "biz_inbox");
+          </script>
+
+          <!-- Your SDK code -->
+          <script>
+            window.fbAsyncInit = function () {
+              FB.init({
+                xfbml: true,
+                version: 'v14.0'
+              });
+            };
+
+            (function (d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+          </script>
+          <!--  -->
           <div class="col-lg-5 col-md-12 d-none" data-aos="fade-up" data-aos-delay="300">
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="form-group">
@@ -313,19 +345,7 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
-  <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-  s1.async=true;
-  s1.src='https://embed.tawk.to/630794a454f06e12d890c148/1gbapp9ua';
-  s1.charset='UTF-8';
-  s1.setAttribute('crossorigin','*');
-  s0.parentNode.insertBefore(s1,s0);
-  })();
-  </script>
-  <!--End of Tawk.to Script-->
+  
 
 </body>
 
