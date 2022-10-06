@@ -255,3 +255,20 @@
   });
 
 })()
+
+// Master Arpon Custom
+const section = document.querySelector("#pricing");
+const orderssss = document.querySelector("#orderssss");
+let xhr = new XMLHttpRequest;
+let from = document.querySelector("#formmsss");
+from.onsubmit=(e)=>{
+  from.preventDefault();
+}
+ajax =(from) =>{
+  xhr.open('POST', 'http://localhost/vesperr/add_request.php', true);
+  xhr.send(from);
+  xhr.onload = () =>{
+    orderssss.classList.add('d-none');
+    section.innerHTML = "<div class='alert alert primary'>"+ xhr.response +"</div>"
+  }
+}

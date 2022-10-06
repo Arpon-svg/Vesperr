@@ -136,7 +136,7 @@
 
     <!-- ======= Pricing Section ======= -->
     <section id="pricing" class="pricing">
-      <div class="container">
+      <div class="container" id="orderssss">
 
         <div class="section-title">
           <h2>Pricing</h2>
@@ -174,26 +174,39 @@
                 <li>Live Care</li>
               </ul>
               <div class="btn-wrap">
-                <a href="#" class="btn-buy" data-bs-toggle="modal" data-bs-target="#verticalycentered" ticket-type="basic">Buy Now</a>
+                <a href="#" class="btn-buy" data-bs-toggle="modal" data-bs-target="#verticalycentered"
+                  ticket-type="basic">Buy Now</a>
               </div>
             </div>
           </div>
           <div class="modal fade" id="verticalycentered" tabindex="-1" style="display: none;" aria-hidden="true">
+            <form action="" method="post" id="formmsss">
             <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">Vertically Centered</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia necessitatibus illo animi repellendus placeat eveniet alias tempora sequi, ratione reiciendis, voluptate totam assumenda libero minus quisquam. Sapiente aperiam numquam sint? Facere ab, voluptatibus explicabo eaque ipsa doloribus natus fugiat tempore!
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Place Order</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+
+                    <input type="text" name="name" class="form-control mb-3" placeholder="Enter Your Name">
+                    <input type="email" name="email" class="form-control mb-3" placeholder="Enter Your Email">
+                    <input type="tel" name="phone" class="form-control mb-3" placeholder="Enter Your Phone">
+                    <select name="pack" id="" class="form-control mb-3">
+                      <option selected>--- Select Your Package ---</option>
+                      <option value="Starter">Starter</option>
+                      <option value="Business">Business</option>
+                      <option value="Enterprise">Enterprise</option>
+                    </select>
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                  </div>
                 </div>
               </div>
-            </div>
+            </form>
           </div>
 
           <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
@@ -339,7 +352,7 @@
   <div id="fb-customer-chat" class="fb-customerchat">
   </div>
   <script>
-   
+
   </script>
   <script>
     var chatbox = document.getElementById('fb-customer-chat');
